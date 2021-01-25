@@ -1,15 +1,8 @@
 #include "CMatrix.h";
 
 void main() {
-	//while(true) {
-	CMatrix* m1 = Matrix_Create(2, 2, false);
-	Matrix_Fill(m1, 5);
-
-	CMatrix* temp = Matrix_Operation(m1, m1, Sum);
-	Matrix_Print(temp);
-	Matrix_Delete(&temp);
-	Matrix_Delete(&m1);
-	//}
+	CMatrix* m1 = Matrix_Create(5, 5, true);
+	printf("%i", Matrix_Determinant(m1));
 }
 
 /*
